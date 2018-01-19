@@ -1,30 +1,51 @@
 var botonMenuX = false;
 var elem = [];
+var content = [];
+var contenido = 0;
 window.onload = function(){
+	/*OPCIONES MENÚ*/
 	elem[0] = document.getElementById("opcionesInicio"); 
 	elem[1] = document.getElementById("opcionesInfo");
 	elem[2] = document.getElementById("opcionesUbic");
 	elem[3] = document.getElementById("opcionesAbout");
+
+	/*CONTENIDO OPCIONES*/
+	content[0] = document.getElementById("inicioContent");
+	content[1] = document.getElementById("infoContent");
+	content[2] = document.getElementById("ubicContent");
+
+
+	/*EVENTOS BOTON MENú*/
 	document.getElementById("boton").onclick = function(){
 		cambiarBoton();
 	}
-	for(var i = 0; i < elem.length; i++){
+	/*EVENTOS OPCIONES*/
+	/*for(var i = 0; i < elem.length; i++){
 		elem[i].onclick = function(){
 			transicionPlus();
 		}
-	}
-	/*elem0.onclick = function(){
-		transicionPlus();
-	}
-	elem1.onclick = function(){
-		transicionPlus();
-	}
-	elem2.onclick = function(){
-		transicionPlus();
-	}
-	elem3.onclick = function(){
-		transicionPlus();
 	}*/
+	elem[0].onclick = function(){
+		transicionPlus();
+		contenido = 0;
+		/*cambiarContenido();*/
+	}
+	elem[1].onclick = function(){
+		transicionPlus();
+		contenido = 1;
+		/*cambiarContenido();*/
+	}
+	elem[2].onclick = function(){
+		transicionPlus();
+		contenido = 2;
+		/*cambiarContenido();*/
+	}
+	elem[3].onclick = function(){
+		transicionPlus();
+		contenido = 3;
+		/*cambiarContenido();*/
+	}
+/*FINAL WINDOW ONLOAD*/
 }
 
 function cambiarBoton(){
@@ -55,6 +76,7 @@ function openMenu(){
 		}
 	}
 }
+
 function animationOpenMenu(){
 	var pos = 25;
 	var id = setInterval(less, 10);
@@ -68,6 +90,7 @@ function animationOpenMenu(){
 		}
 	}
 }
+
 function animationSeparador(){
 	for (var i = 0; i < 3; i++){
 		document.getElementsByClassName("separacion")[i].style.display = "block";
@@ -136,6 +159,7 @@ function transicionLess(){
  		if (pos == 0) {
  			clearInterval(id);
  			document.getElementById("transicion").style.display = "none";
+ 			cambiarContenido();
  		} else {
  			pos --;
  			document.getElementById("transicion").style.width = pos + "%";
@@ -143,3 +167,24 @@ function transicionLess(){
  	}	
 }
 
+function cambiarContenido(){
+	switch(contenido){
+		case 0:
+			for(var i = 1; i < content.length; i++){
+				content[i].style.display ="none";
+			}
+			content[0].style.display = "block";
+			break;
+		case 1:
+			content[0].style.display = "none";
+			content[2].style.display = "none";
+			content[1].style.display = "block";
+			break;
+		case 2:
+			for(var i = 0; i < content.length - 1; i++){
+				content[i].style.display = "none";
+			}
+			content[2].style.display = "block";
+			break;
+	}
+}

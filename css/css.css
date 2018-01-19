@@ -17,6 +17,8 @@ body{
 	display: none;
 	opacity: 0.5
 }
+
+/*DIV IZQUIERDA*/
 #izquierda{
 	position: fixed;
 	height: 100%;
@@ -103,3 +105,55 @@ body{
 	top: 15%;
 	display: none;
 }
+
+/*CONTENIDO*/
+
+#inicioContent{
+	position: absolute;
+	right: 10%;
+	top: 30%;
+	display: block;
+	height: auto;
+	width: 60%;
+	background-color: white;
+	opacity: 0.5;
+	border-radius: 10px;
+	font-size: 200%;
+	text-align: center;
+}
+#inicioContent p{
+	padding: 5%;
+}
+#infoContent{
+	position: absolute;
+	right: 10%;
+	top: 30%;
+	display: none;
+	height: auto;
+	width: 60%;
+	background-color: white;
+	opacity: 0.5;
+	border-radius: 10px;
+	font-size: 200%;
+	text-align: center;
+}
+#infoContent p{
+	padding: 5%;
+}
+#ubicContent{
+	position: absolute;
+	right: 10%;
+	top: 30%;
+	display: none;
+	height: auto;
+	width: 60%;
+	background-color: white;
+	opacity: 0.5;
+	border-radius: 10px;
+	font-size: 200%;
+	text-align: center;
+}
+#ubicContent p{
+	padding: 5%;
+}
+
