@@ -1,17 +1,19 @@
 var botonMenuX = false;
-var elem0 = null;
-var elem1 = null;
-var elem2 = null;
-var elem3 = null;
+var elem = [];
 window.onload = function(){
-	elem0 = document.getElementById("opcionesInicio"); 
-	elem1 = document.getElementById("opcionesInfo");
-	elem2 = document.getElementById("opcionesUbic");
-	elem3 = document.getElementById("opcionesAbout");
+	elem[0] = document.getElementById("opcionesInicio"); 
+	elem[1] = document.getElementById("opcionesInfo");
+	elem[2] = document.getElementById("opcionesUbic");
+	elem[3] = document.getElementById("opcionesAbout");
 	document.getElementById("boton").onclick = function(){
 		cambiarBoton();
 	}
-	elem0.onclick = function(){
+	for(var i = 0; i < elem.length; i++){
+		elem[i].onclick = function(){
+			transicionPlus();
+		}
+	}
+	/*elem0.onclick = function(){
 		transicionPlus();
 	}
 	elem1.onclick = function(){
@@ -22,7 +24,7 @@ window.onload = function(){
 	}
 	elem3.onclick = function(){
 		transicionPlus();
-	}
+	}*/
 }
 
 function cambiarBoton(){
@@ -43,10 +45,9 @@ function openMenu(){
 	function plus(){
 		if (pos == 25) {
 			clearInterval(id);
-			elem0.style.display = "block";
-			elem1.style.display = "block";
-			elem2.style.display = "block";
-			elem3.style.display = "block";
+			for(var i = 0; i < elem.length; i++){
+				elem[i].style.display = "block";
+			}
 			animationOpenMenu();
 		} else {
 			pos ++;
@@ -81,9 +82,9 @@ function animationSeparador(){
 			clearInterval(id);
 		} else {
 			pos ++;
-			document.getElementsByClassName("separacion")[0].style.width = pos + "%";
-			document.getElementsByClassName("separacion")[1].style.width = pos + "%";
-			document.getElementsByClassName("separacion")[2].style.width = pos + "%";
+			for(var i = 0; i < 3; i++){
+				document.getElementsByClassName("separacion")[i].style.width = pos + "%";
+			}
 		}
 	}
 }
@@ -99,13 +100,12 @@ function closeMenu(){
 			pos --;
 			document.getElementById("izquierda").style.width = pos + "%";
 			if (pos == 12) {
-				elem0.style.display = "none";
-				elem1.style.display = "none";
-				elem2.style.display = "none";
-				elem3.style.display = "none";
-				document.getElementsByClassName("separacion")[0].style.display = "none";
-				document.getElementsByClassName("separacion")[1].style.display = "none";
-				document.getElementsByClassName("separacion")[2].style.display = "none";
+				for(var i = 0; i < elem.length; i++){
+					elem[i].style.display = "none";
+				}
+				for(var i = 0; i < 3; i++){
+					document.getElementsByClassName("separacion")[i].style.display = "none";
+				}	
 				for(var i = 0; i < 3; i++){
 					document.getElementsByClassName("separacion")[i].style.width = 0 + "%";
 				}
@@ -113,78 +113,6 @@ function closeMenu(){
 		}
 	}
 }
-/*function showButtons(){
-	if(!botonMenuX){
-		document.getElementById("opcionesInicio").style.display = "block";
-		document.getElementById("opcionesInfo").style.display = "block";
-		document.getElementById("opcionesUbic").style.display = "block";
-		document.getElementById("opcionesAbout").style.display = "block";
-		myMovePlus();	
-	} else {
-		myMoveLess();
-	}
-}
-
-function myMovePlus(){	
- 	var pos = 0;
- 	var id = setInterval(frame, 10);
- 	function frame(){
-	 	if (pos == 100){
-	 		clearInterval(id)
-	 	} else {
-	 		pos++;
-			elem0.style.width = pos + "%";
-			elem1.style.width = pos + "%";
-			elem2.style.width = pos + "%";
-			elem3.style.width = pos + "%";
-			if (pos == 22){
-				document.getElementById("opcionesInicioP").style.display = "block";
-			}
-			if (pos == 51){
-				document.getElementById("opcionesInfoP").style.display = "block";
-			}
-			if (pos == 40) {
-				document.getElementById("opcionesUbicP").style.display = "block";
-			}
-			if (pos == 37) {
-				document.getElementById("opcionesAboutP").style.display = "block";
-			}
-	 	}
- 	}
-}
-
-function myMoveLess(){
- 	var pos = 100;
- 	var id = setInterval(frame, 10);
- 	function frame(){
-	 	if (pos == 0){
-	 		clearInterval(id)
-	 		elem0.style.display = "none";
-			elem1.style.display = "none";
-			elem2.style.display = "none";
-			elem3.style.display = "none";
-	 	} else {
-	 		pos--;
-			elem0.style.width = pos + "%";
-			elem1.style.width = pos + "%";
-			elem2.style.width = pos + "%";
-			elem3.style.width = pos + "%";
-			if (pos == 22){
-				document.getElementById("opcionesInicioP").style.display = "none";
-			}
-			if (pos == 51){
-				document.getElementById("opcionesInfoP").style.display = "none";
-			}
-			if (pos == 40) {
-				document.getElementById("opcionesUbicP").style.display = "none";
-			}
-			if (pos == 37) {
-				document.getElementById("opcionesAboutP").style.display = "none";
-			}
-	 	}
- 	}
-
-}*/
 
 function transicionPlus(){
 	document.getElementById("transicion").style.display = "block";
