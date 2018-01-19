@@ -1,0 +1,114 @@
+/*Paleta
+body = #7634B7
+izq = #995DD5
+btn = #D3B6F0
+*/
+body,html{
+	height:100%;
+	padding:0px;
+	margin:0px;
+}
+body{
+	font-family: Arial;
+	background-image: url("../img/asdef.jpg");
+	/*background-color: #7634B7;*/
+	background-repeat: no-repeat;
+}
+#transicion{
+	position: absolute;
+	right: 0px;
+	height: 100%;
+	width: 0%;
+	background-color: black;
+	display: none;
+	opacity: 0.5
+}
+#izquierda{
+	position: fixed;
+	height: 100%;
+	width: 50px;
+	background-color: white;
+	opacity: 0.5;
+}
+#boton{
+	position: absolute;
+	display: block;
+	right: 0px;
+	cursor: pointer;
+}
+/*#containerOpciones{
+	position: absolute;
+	display: none;
+	width: 0%;
+	height: auto;
+	top: 10%;
+	background-color: red;
+}
+.opciones{
+	cursor: pointer;
+	color: white;
+	width: 0%;
+	height: 50px;
+	background-color: yellow;
+	margin-bottom: 3%;
+	top: 10%;
+}*/
+
+#opcionesInicio{
+	text-align: center;
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 50px;
+	top: 15%;
+	cursor: pointer;
+}
+
+#opcionesInfo{
+	text-align: center;
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 50px;
+	top: 15%;
+	margin-top: 30%;
+	cursor: pointer;
+}
+
+#opcionesUbic{
+	text-align: center;
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 50px;
+	top: 15%;
+	margin-top: 60%;
+	cursor: pointer;
+}
+
+#opcionesAbout{
+	text-align: center;
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 50px;
+	top: 15%;
+	margin-top: 90%;
+	cursor: pointer;
+}
+.separacion{
+	position: absolute;
+	width: 0%;
+	margin-left: 10%;
+	height: 2px;
+	background-color: black;
+	top: 15%;
+	display: none;
+} 
+/*top 15 margin 24
+ top 15 asd 55
+ 86
+
+
+
+
