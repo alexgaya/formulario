@@ -66,9 +66,10 @@ function openMenu(){
 	function plus(){
 		if (pos == 25) {
 			clearInterval(id);
-			for(var i = 0; i < elem.length; i++){
-				elem[i].style.display = "block";
-			}
+			/*for(var i = 0; i < elem.length; i++){
+				elem[i].style.display = "inline-block";
+			}*/
+			document.getElementById("asd").style.display = "block";
 			animationOpenMenu();
 		} else {
 			pos ++;
@@ -95,9 +96,9 @@ function animationSeparador(){
 	for (var i = 0; i < 3; i++){
 		document.getElementsByClassName("separacion")[i].style.display = "block";
 	}
-	document.getElementsByClassName("separacion")[0].style.marginTop = 22 + "%";
+	/*document.getElementsByClassName("separacion")[0].style.marginTop = 22 + "%";
 	document.getElementsByClassName("separacion")[1].style.marginTop = 52 + "%";
-	document.getElementsByClassName("separacion")[2].style.marginTop = 82 + "%";
+	document.getElementsByClassName("separacion")[2].style.marginTop = 82 + "%";*/
 	var pos = 0;
 	var id = setInterval(plus, 10);
 	function plus(){
@@ -123,9 +124,10 @@ function closeMenu(){
 			pos --;
 			document.getElementById("izquierda").style.width = pos + "%";
 			if (pos == 12) {
-				for(var i = 0; i < elem.length; i++){
+				/*for(var i = 0; i < elem.length; i++){
 					elem[i].style.display = "none";
-				}
+				}*/
+				document.getElementById("asd").style.display = "none";
 				for(var i = 0; i < 3; i++){
 					document.getElementsByClassName("separacion")[i].style.display = "none";
 				}	
