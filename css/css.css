@@ -1,8 +1,3 @@
-/*Paleta
-body = #7634B7
-izq = #995DD5
-btn = #D3B6F0
-*/
 body,html{
 	height:100%;
 	padding:0px;
@@ -11,7 +6,6 @@ body,html{
 body{
 	font-family: Arial;
 	background-image: url("../img/asdef.jpg");
-	/*background-color: #7634B7;*/
 	background-repeat: no-repeat;
 }
 #transicion{
@@ -36,24 +30,6 @@ body{
 	right: 0px;
 	cursor: pointer;
 }
-/*#containerOpciones{
-	position: absolute;
-	display: none;
-	width: 0%;
-	height: auto;
-	top: 10%;
-	background-color: red;
-}
-.opciones{
-	cursor: pointer;
-	color: white;
-	width: 0%;
-	height: 50px;
-	background-color: yellow;
-	margin-bottom: 3%;
-	top: 10%;
-}*/
-
 #opcionesInicio{
 	text-align: center;
 	position: absolute;
@@ -62,6 +38,11 @@ body{
 	height: 50px;
 	top: 15%;
 	cursor: pointer;
+}
+
+#opcionesInicio:hover{
+	font-size: 120%;
+	transition-duration: 0.35s;
 }
 
 #opcionesInfo{
@@ -75,6 +56,12 @@ body{
 	cursor: pointer;
 }
 
+#opcionesInfo:hover{
+	font-size: 120%;
+	transition-duration: 0.35s;
+}
+
+
 #opcionesUbic{
 	text-align: center;
 	position: absolute;
@@ -86,6 +73,12 @@ body{
 	cursor: pointer;
 }
 
+#opcionesUbic:hover{
+	font-size: 120%;
+	transition-duration: 0.35s;
+}
+
+
 #opcionesAbout{
 	text-align: center;
 	position: absolute;
@@ -96,6 +89,11 @@ body{
 	margin-top: 90%;
 	cursor: pointer;
 }
+#opcionesAbout:hover{
+	font-size: 120%;
+	transition-duration: 0.35s;
+}
+
 .separacion{
 	position: absolute;
 	width: 0%;
@@ -104,11 +102,4 @@ body{
 	background-color: black;
 	top: 15%;
 	display: none;
-} 
-/*top 15 margin 24
- top 15 asd 55
- 86
-
-
-
-
+}
