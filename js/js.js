@@ -69,6 +69,7 @@ function openMenu(){
 	function plus(){
 		if (pos == 40) {
 			clearInterval(id);
+			contenido = null;
 			/*for(var i = 0; i < elem.length; i++){
 				elem[i].style.display = "inline-block";
 			}*/
