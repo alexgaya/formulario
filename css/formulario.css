@@ -1,0 +1,46 @@
+body,html{
+	height:100%;
+	padding:0px;
+	margin:0px;
+}
+body{
+	font-family: Arial;
+	background-image: url("../img/asdef.jpg");
+	background-repeat: no-repeat;
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+#logo{
+	text-align:center;
+	top:10%;
+	width:100%;
+	padding-top: 10px;
+}
+#formulario{
+	padding: 3%;
+	background-color: white;
+	opacity: 0.8;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+select, input[type=text]{
+	background-color: #1F4A7E;
+	color: white;
+}
+hr{
+	margin-top: 6%;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+

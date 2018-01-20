@@ -14,17 +14,16 @@ window.onload = function(){
 	content[1] = document.getElementById("infoContent");
 	content[2] = document.getElementById("ubicContent");
 
+	/*EVENTO BOTON EXAMEN*/
+	document.getElementById("joinDiv").onclick = function(){
+		location.href = "formulario.html";
+	}
 
 	/*EVENTOS BOTON MENú*/
 	document.getElementById("boton").onclick = function(){
 		cambiarBoton();
 	}
 	/*EVENTOS OPCIONES*/
-	/*for(var i = 0; i < elem.length; i++){
-		elem[i].onclick = function(){
-			transicionPlus();
-		}
-	}*/
 	elem[0].onclick = function(){
 		transicionPlus();
 		contenido = 0;
