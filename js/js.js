@@ -2,6 +2,9 @@ var botonMenuX = false;
 var elem = [];
 var content = [];
 var contenido = null;
+var trans = null;
+var menu = null;
+var lineas = null;
 window.onload = function(){
 	/*OPCIONES MENÚ*/
 	elem[0] = document.getElementById("opcionesInicio"); 
@@ -13,6 +16,11 @@ window.onload = function(){
 	content[0] = document.getElementById("inicioContent");
 	content[1] = document.getElementById("infoContent");
 	content[2] = document.getElementById("ubicContent");
+
+	/*ELEMENTOS ANIMACIÓN*/
+	trans = document.getElementById("transicion");
+	menu = document.getElementById("izquierda");
+	lineas = document.getElementsByClassName("separacion");
 
 	/*EVENTO BOTON EXAMEN*/
 	document.getElementById("joinDiv").onclick = function(){
@@ -76,7 +84,7 @@ function openMenu(){
 			animationOpenMenu();
 		} else {
 			pos ++;
-			document.getElementById("izquierda").style.width = pos + "%";
+			menu.style.width = pos + "%";
 		}
 	}
 }
@@ -90,14 +98,14 @@ function animationOpenMenu(){
 			animationSeparador();
 		} else {
 			pos --;
-			document.getElementById("izquierda").style.width = pos + "%";
+			menu.style.width = pos + "%";
 		}
 	}
 }
 
 function animationSeparador(){
 	for (var i = 0; i < 3; i++){
-		document.getElementsByClassName("separacion")[i].style.display = "block";
+		lineas[i].style.display = "block";
 	}
 	/*document.getElementsByClassName("separacion")[0].style.marginTop = 22 + "%";
 	document.getElementsByClassName("separacion")[1].style.marginTop = 52 + "%";
@@ -110,7 +118,7 @@ function animationSeparador(){
 		} else {
 			pos ++;
 			for(var i = 0; i < 3; i++){
-				document.getElementsByClassName("separacion")[i].style.width = pos + "%";
+				lineas[i].style.width = pos + "%";
 			}
 		}
 	}
@@ -122,7 +130,7 @@ function closeMenu(){
 	function less(){
 		if (pos == 3) {
 			clearInterval(id);
-			document.getElementById("izquierda").style.width = 50 + "px";
+			menu.style.width = 50 + "px";
 			if(contenido < 4 && contenido != null){
 				contenido = 4;
 				transicionPlus();
@@ -134,17 +142,17 @@ function closeMenu(){
 			}
 		} else {
 			pos --;
-			document.getElementById("izquierda").style.width = pos + "%";
+			menu.style.width = pos + "%";
 			if (pos == 30) {
 				/*for(var i = 0; i < elem.length; i++){
 					elem[i].style.display = "none";
 				}*/
 				document.getElementById("lista").style.display = "none";
 				for(var i = 0; i < 3; i++){
-					document.getElementsByClassName("separacion")[i].style.display = "none";
+					lineas[i].style.display = "none";
 				}	
 				for(var i = 0; i < 3; i++){
-					document.getElementsByClassName("separacion")[i].style.width = 0 + "%";
+					lineas[i].style.width = 0 + "%";
 				}
 			}
 		}
@@ -152,7 +160,7 @@ function closeMenu(){
 }
 
 function transicionPlus(){
-	document.getElementById("transicion").style.display = "block";
+	trans.style.display = "block";
 	var pos = 0;
 	var id = setInterval(plus, 5);
  	function plus(){
@@ -161,7 +169,7 @@ function transicionPlus(){
  			transicionLess();
  		} else {
  			pos ++;
- 			document.getElementById("transicion").style.width = pos + "%";
+ 			trans.style.width = pos + "%";
  		}
  	}	
 }
@@ -172,7 +180,7 @@ function transicionLess(){
  	function less(){
  		if (pos == 0) {
  			clearInterval(id);
- 			document.getElementById("transicion").style.display = "none";
+ 			trans.style.display = "none";
  			cambiarContenido();
  			if(contenido==4){
  				document.getElementById("logo").style.display = "block";
@@ -181,7 +189,7 @@ function transicionLess(){
  			}
  		} else {
  			pos --;
- 			document.getElementById("transicion").style.width = pos + "%";
+ 			trans.style.width = pos + "%";
  		}
  	}	
 }
