@@ -1,90 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <questions>
-  <question id='profe001'>
-    <type>text</type>
-    <tittle>1. Css: Dale color verde a un div con id="miDiv".</tittle>
-    <answer>#miDiv{background-color: green;}</answer>
-  </question>
-  <question id='profe002'>
-    <type>text</type>
-    <tittle>2. Javascript: Almacena id="asd" en una variable llamada "prueba".</tittle>
-    <answer>var prueba = document.getElementById("asd");</answer>
-  </question>
-  <question id='profe003'>
-    <type>select</type>
-    <tittle>3. Si te digo absolute, ¿En qué piensas?</tittle>
-    <option>No lo sé</option>
-    <option>No me consta</option> 
-    <option>Relative</option>
-    <option>Fixed</option>
-    <answer>3</answer> <!-- SelectedIndex = 0, 1 ó 2 , 2 vol dir la tercera opciói -->
-  </question>
-  <question id='profe003'>
-    <type>select</type>
-    <tittle>4. </tittle>
-    <option>Carn</option>
-    <option>Peix</option> 
-    <option>Res, està mort</option>
-    <answer>2</answer> <!-- SelectedIndex = 0, 1 ó 2 , 2 vol dir la tercera opciói -->
-  </question>
-  <question id='profe004'>
-    <type>multiple</type>
-    <tittle>Marca els nombres senars?</tittle>
-    <option>1</option>
-    <option>2</option> 
-    <option>3</option> 
-    <option>4</option>
-    <answer>1</answer>
-    <answer>3</answer>
-  </question>
-  <question id='profe004'>
-    <type>multiple</type>
-    <tittle>Marca els nombres senars?</tittle>
-    <option>1</option>
-    <option>2</option> 
-    <option>3</option> 
-    <option>4</option>
-    <answer>1</answer>
-    <answer>3</answer>
-  </question>
-  <question id='profe004'>
-    <type>checkbox</type>
-    <tittle>Marca els nombres senars?</tittle>
-    <option>1</option>
-    <option>2</option> 
-    <option>3</option> 
-    <option>4</option>
-    <answer>1</answer>
-    <answer>3</answer>
-  </question>
-  <question id='profe004'>
-    <type>checkbox</type>
-    <tittle>Marca els nombres senars?</tittle>
-    <option>1</option>
-    <option>2</option> 
-    <option>3</option> 
-    <option>4</option>
-    <answer>1</answer>
-    <answer>3</answer>
-  </question>
-  <question id='profe004'>
-    <type>radio</type>
-    <tittle>Marca els nombres senars?</tittle>
-    <option>1</option>
-    <option>2</option> 
-    <option>3</option> 
-    <option>4</option>
-    <answer>1</answer>
-    <answer>3</answer>
-  </question>
-  <question id='profe004'>
-    <type>radio</type>
-    <tittle>Marca els nombres senars?</tittle>
-    <option>1</option>
-    <option>2</option> 
-    <option>3</option> 
-    <option>4</option>
-    <answer>1</answer>
-    <answer>3</answer>
-  </question>
+	<question id='q1'>
+		<type>text</type>
+		<tittle>1. Css: Dale color verde a un div con id="miDiv".</tittle>
+		<answer>#miDiv{background-color: green;}</answer>
+	</question>
+	<question id='q2'>
+		<type>text</type>
+		<tittle>2. Javascript: Almacena id="asd" en una variable llamada "prueba". (La variable no está declarada)</tittle>
+		<answer>var prueba = document.getElementById("asd");</answer>
+	</question>
+	<question id='q3'>
+		<type>select</type>
+		<tittle>3. Si te digo absolute, ¿En qué piensas?</tittle>
+		<option>No lo sé</option>
+		<option>No me consta</option> 
+		<option>Relative</option>
+		<option>Fixed</option>
+		<answer>2</answer>
+	</question>
+	<question id='q4'>
+		<type>select</type>
+		<tittle>4. ¿Qué etiquetas usarías para hacer una lista?</tittle>
+		<option>li, ul</option>
+		<option>div , ul</option> 
+		<option>ul, li</option>
+		<answer>2</answer>
+	</question>
+	<question id='q5'>
+		<type>multiple</type>
+		<tittle>5. Para dimensionar un div, ¿Qué utilizarías?</tittle>
+		<option>Height</option>
+		<option>Width</option> 
+		<option>Margin</option> 
+		<option>Top</option>
+		<answer>0</answer>
+		<answer>1</answer>
+	</question>
+	<question id='q6'>
+		<type>multiple</type>
+		<tittle>6. Marca los tipos de archivos utilizados para crear una web.</tittle>
+		<option>.pdf</option>
+		<option>.js</option> 
+		<option>.css</option> 
+		<option>.html</option>
+		<answer>1</answer>
+		<answer>2</answer>
+		<answer>3</answer>
+	</question>
+	<question id='q7'>
+		<type>checkbox</type>
+		<tittle>7. </tittle>
+		<option>1</option>
+		<option>2</option> 
+		<option>3</option> 
+		<option>4</option>
+		<answer>1</answer>
+		<answer>3</answer>
+	</question>
+	<question id='q8'>
+		<type>checkbox</type>
+		<tittle>8. </tittle>
+		<option>1</option>
+		<option>2</option> 
+		<option>3</option> 
+		<option>4</option>
+		<answer>1</answer>
+		<answer>3</answer>
+	</question>
+	<question id='q9'>
+		<type>radio</type>
+		<tittle>9. ¿Convendría tener una paleta de colores al empezar el estilo de un proyecto?</tittle>
+		<option>No</option>
+		<option>Sí</option> 
+		<option>No lo sé</option> 
+		<option>Ninguna de las anteriores es correcta</option>
+		<answer>1</answer>
+	</question>
+	<question id='q10'>
+		<type>radio</type>
+		<tittle>10. Marca els nombres senars?</tittle>
+		<option>1</option>
+		<option>2</option> 
+		<option>3</option> 
+		<option>4</option>
+		<answer>1</answer>
+		<answer>3</answer>
+	</question>
 </questions>

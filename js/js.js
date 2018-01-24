@@ -35,22 +35,18 @@ window.onload = function(){
 	elem[0].onclick = function(){
 		transicionPlus();
 		contenido = 0;
-		/*cambiarContenido();*/
 	}
 	elem[1].onclick = function(){
 		transicionPlus();
 		contenido = 1;
-		/*cambiarContenido();*/
 	}
 	elem[2].onclick = function(){
 		transicionPlus();
 		contenido = 2;
-		/*cambiarContenido();*/
 	}
 	elem[3].onclick = function(){
 		transicionPlus();
 		contenido = 3;
-		/*cambiarContenido();*/
 	}
 /*FINAL WINDOW ONLOAD*/
 }
@@ -77,9 +73,6 @@ function openMenu(){
 		if (pos == 40) {
 			clearInterval(id);
 			contenido = null;
-			/*for(var i = 0; i < elem.length; i++){
-				elem[i].style.display = "inline-block";
-			}*/
 			document.getElementById("lista").style.display = "block";
 			animationOpenMenu();
 		} else {
@@ -107,9 +100,6 @@ function animationSeparador(){
 	for (var i = 0; i < 3; i++){
 		lineas[i].style.display = "block";
 	}
-	/*document.getElementsByClassName("separacion")[0].style.marginTop = 22 + "%";
-	document.getElementsByClassName("separacion")[1].style.marginTop = 52 + "%";
-	document.getElementsByClassName("separacion")[2].style.marginTop = 82 + "%";*/
 	var pos = 0;
 	var id = setInterval(plus, 10);
 	function plus(){
@@ -144,9 +134,6 @@ function closeMenu(){
 			pos --;
 			menu.style.width = pos + "%";
 			if (pos == 30) {
-				/*for(var i = 0; i < elem.length; i++){
-					elem[i].style.display = "none";
-				}*/
 				document.getElementById("lista").style.display = "none";
 				for(var i = 0; i < 3; i++){
 					lineas[i].style.display = "none";
