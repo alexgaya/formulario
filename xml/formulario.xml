@@ -2,17 +2,17 @@
 <questions>
 	<question id='q1'>
 		<type>text</type>
-		<tittle>1. Css: Dale color verde a un div con id="miDiv".</tittle>
+		<title>1. Css: Dale color verde a un div con id="miDiv".</title>
 		<answer>#miDiv{background-color: green;}</answer>
 	</question>
 	<question id='q2'>
 		<type>text</type>
-		<tittle>2. Javascript: Almacena id="asd" en una variable llamada "prueba". (La variable no está declarada)</tittle>
+		<title>2. Javascript: Almacena id="asd" en una variable llamada "prueba". (La variable no está declarada)</title>
 		<answer>var prueba = document.getElementById("asd");</answer>
 	</question>
 	<question id='q3'>
 		<type>select</type>
-		<tittle>3. Si te digo absolute, ¿En qué piensas?</tittle>
+		<title>3. Si te digo absolute, ¿En qué piensas?</title>
 		<option>No lo sé</option>
 		<option>No me consta</option> 
 		<option>Relative</option>
@@ -21,7 +21,7 @@
 	</question>
 	<question id='q4'>
 		<type>select</type>
-		<tittle>4. ¿Qué etiquetas usarías para hacer una lista?</tittle>
+		<title>4. ¿Qué etiquetas usarías para hacer una lista?</title>
 		<option>li, ul</option>
 		<option>div , ul</option> 
 		<option>ul, li</option>
@@ -29,7 +29,7 @@
 	</question>
 	<question id='q5'>
 		<type>multiple</type>
-		<tittle>5. Para dimensionar un div, ¿Qué utilizarías?</tittle>
+		<title>5. Para dimensionar un div, ¿Qué utilizarías?</title>
 		<option>Height</option>
 		<option>Width</option> 
 		<option>Margin</option> 
@@ -39,7 +39,7 @@
 	</question>
 	<question id='q6'>
 		<type>multiple</type>
-		<tittle>6. Marca los tipos de archivos utilizados para crear una web.</tittle>
+		<title>6. Marca los tipos de archivos utilizados para crear una web.</title>
 		<option>.pdf</option>
 		<option>.js</option> 
 		<option>.css</option> 
@@ -50,7 +50,7 @@
 	</question>
 	<question id='q7'>
 		<type>checkbox</type>
-		<tittle>7. Marca las propiedades de css</tittle>
+		<title>7. Marca las propiedades de css</title>
 		<option>color</option>
 		<option>fixed</option> 
 		<option>display</option> 
@@ -60,7 +60,7 @@
 	</question>
 	<question id='q8'>
 		<type>checkbox</type>
-		<tittle>8. ¿Dónde puedes dar estilo a un elemento html?</tittle>
+		<title>8. ¿Dónde puedes dar estilo a un elemento html?</title>
 		<option>En el .css</option>
 		<option>En el .html</option> 
 		<option>En el .class</option> 
@@ -71,7 +71,7 @@
 	</question>
 	<question id='q9'>
 		<type>radio</type>
-		<tittle>9. ¿Convendría tener una paleta de colores al empezar el estilo de un proyecto?</tittle>
+		<title>9. ¿Convendría tener una paleta de colores al empezar el estilo de un proyecto?</title>
 		<option>No</option>
 		<option>Sí</option> 
 		<option>No lo sé</option> 
@@ -80,7 +80,7 @@
 	</question>
 	<question id='q10'>
 		<type>radio</type>
-		<tittle>10. ¿Cómo empezarías un .html?</tittle>
+		<title>10. ¿Cómo empezarías un .html?</title>
 		<option>body</option>
 		<option>tittle</option> 
 		<option>!doctype</option> 
