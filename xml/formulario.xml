@@ -50,23 +50,24 @@
 	</question>
 	<question id='q7'>
 		<type>checkbox</type>
-		<tittle>7. </tittle>
-		<option>1</option>
-		<option>2</option> 
-		<option>3</option> 
-		<option>4</option>
-		<answer>1</answer>
-		<answer>3</answer>
+		<tittle>7. Marca las propiedades de css</tittle>
+		<option>color</option>
+		<option>fixed</option> 
+		<option>display</option> 
+		<option>none</option>
+		<answer>0</answer>
+		<answer>2</answer>
 	</question>
 	<question id='q8'>
 		<type>checkbox</type>
-		<tittle>8. </tittle>
-		<option>1</option>
-		<option>2</option> 
-		<option>3</option> 
-		<option>4</option>
+		<tittle>8. ¿Dónde puedes dar estilo a un elemento html?</tittle>
+		<option>En el .css</option>
+		<option>En el .html</option> 
+		<option>En el .class</option> 
+		<option>En el .js</option>
+		<answer>0</answer>
 		<answer>1</answer>
-		<answer>3</answer>
+    <answer>3</answer>
 	</question>
 	<question id='q9'>
 		<type>radio</type>
@@ -79,12 +80,11 @@
 	</question>
 	<question id='q10'>
 		<type>radio</type>
-		<tittle>10. Marca els nombres senars?</tittle>
-		<option>1</option>
-		<option>2</option> 
-		<option>3</option> 
-		<option>4</option>
-		<answer>1</answer>
+		<tittle>10. ¿Cómo empezarías un .html?</tittle>
+		<option>body</option>
+		<option>tittle</option> 
+		<option>!doctype</option> 
+		<option>html</option>
 		<answer>3</answer>
-	</question>
+  </question>
 </questions>
