@@ -18,7 +18,7 @@ window.onload = function(){
 function gestionarXml(dadesXml){
 	var xmlDoc = dadesXml.responseXML;
 	for(var i = 0; i < 10; i++){
-  		document.getElementsByTagName("h3")[i].innerHTML = xmlDoc.getElementsByTagName("tittle")[i].innerHTML;
+  		document.getElementsByTagName("h3")[i].innerHTML = xmlDoc.getElementsByTagName("title")[i].innerHTML;
     }	  
     
 
