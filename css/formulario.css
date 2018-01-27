@@ -29,7 +29,7 @@ select, input[type=text]{
 	color: white;
 }
 hr{
-	margin-top: 6%;
+	margin-top: 3%;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: white;

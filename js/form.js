@@ -20,6 +20,10 @@ function gestionarXml(dadesXml){
 	for(var i = 0; i < 10; i++){
   		document.getElementsByTagName("h3")[i].innerHTML = xmlDoc.getElementsByTagName("title")[i].innerHTML;
     }	  
-    
-
+    for(var i = 0; i < 15; i++){
+    	document.getElementsByTagName("option")[i].innerHTML = xmlDoc.getElementsByTagName("option")[i].innerHTML;
+    }
+    for(var i = 0; i < 16; i++){
+    	document.getElementsByTagName("label")[i].innerHTML = xmlDoc.getElementsByTagName("option")[i + 15].innerHTML;
+    }
 }
