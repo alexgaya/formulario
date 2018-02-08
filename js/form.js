@@ -18,7 +18,7 @@ function gestionarXml(dadesXml){
 	var xmlDoc = dadesXml.responseXML;
 	for(i = 0; i < 10; i++){
   		document.getElementsByTagName("h3")[i].innerHTML = xmlDoc.getElementsByTagName("title")[i].innerHTML;
-    }	  
+    }
   //LEER SELECTS
   for(i = 2; i < 4; i++){
     var opcionesSelect = [];

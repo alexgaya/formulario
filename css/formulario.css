@@ -22,6 +22,7 @@ body{
 	background-color: rgba(255,255,255, 0.7);
 	border-radius: 10px;
 	margin-bottom: 10px;
+	padding-bottom: 1%;
 }
 select, input[type=text]{
 	background-color: #1F4A7E;
@@ -42,4 +43,25 @@ hr{
 :-moz-placeholder { /* Firefox 18- */
   color: white;
 }
+h3{
+	font-size: 1.8em;
+}
+#correccion{
+	font-family: fantasy;
+	font-size: 1.5em;
+	cursor: pointer;
+	background-color: #1F4A7E;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#correccion:hover{
+	background-color: #163254;
+	transition-duration: 0.35s;
+}
 
+@media screen and (max-width: 960px) {
+	h3{font-size: 1.4em;}
+}
