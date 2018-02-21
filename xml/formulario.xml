@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <questions>
-	<question id='q1'>
+	<question>
 		<type>text</type>
 		<title>1. Css: Dale color verde a un div con id="miDiv".</title>
 		<answer>#miDiv{background-color: green;}</answer>
 	</question>
-	<question id='q2'>
+	<question>
 		<type>text</type>
 		<title>2. Javascript: Almacena id="asd" en una variable llamada "prueba". (La variable no está declarada)</title>
 		<answer>var prueba = document.getElementById("asd");</answer>
 	</question>
-	<question id='q3'>
+	<question>
 		<type>select</type>
 		<title>3. Si te digo absolute, ¿En qué piensas?</title>
 		<option>No lo sé</option>
@@ -19,7 +19,7 @@
 		<option>Fixed</option>
 		<answer>2</answer>
 	</question>
-	<question id='q4'>
+	<question>
 		<type>select</type>
 		<title>4. ¿Qué etiquetas usarías para hacer una lista?</title>
 		<option>li, ul</option>
@@ -27,7 +27,7 @@
 		<option>ul, li</option>
 		<answer>2</answer>
 	</question>
-	<question id='q5'>
+	<question>
 		<type>multiple</type>
 		<title>5. Para dimensionar un div, ¿Qué utilizarías?</title>
 		<option>Height</option>
@@ -37,7 +37,7 @@
 		<answer>0</answer>
 		<answer>1</answer>
 	</question>
-	<question id='q6'>
+	<question>
 		<type>multiple</type>
 		<title>6. Marca los tipos de archivos utilizados para crear una web.</title>
 		<option>.pdf</option>
@@ -48,7 +48,7 @@
 		<answer>2</answer>
 		<answer>3</answer>
 	</question>
-	<question id='q7'>
+	<question>
 		<type>checkbox</type>
 		<title>7. Marca las propiedades de css</title>
 		<option>color</option>
@@ -58,7 +58,7 @@
 		<answer>0</answer>
 		<answer>2</answer>
 	</question>
-	<question id='q8'>
+	<question>
 		<type>checkbox</type>
 		<title>8. ¿Dónde puedes dar estilo a un elemento html?</title>
 		<option>En el .css</option>
@@ -69,7 +69,7 @@
 		<answer>1</answer>
     <answer>3</answer>
 	</question>
-	<question id='q9'>
+	<question>
 		<type>radio</type>
 		<title>9. ¿Convendría tener una paleta de colores al empezar el estilo de un proyecto?</title>
 		<option>No</option>
@@ -78,13 +78,13 @@
 		<option>Ninguna de las anteriores es correcta</option>
 		<answer>1</answer>
 	</question>
-	<question id='q10'>
+	<question>
 		<type>radio</type>
 		<title>10. ¿Cómo empezarías un .html?</title>
 		<option>body</option>
 		<option>tittle</option> 
-		<option>!doctype</option> 
+		<option>!doctype</option>
 		<option>html</option>
 		<answer>3</answer>
-  </question>
+	</question>
 </questions>
