@@ -53,7 +53,7 @@ function gestionarXml(dadesXml){
     for(j = 0; j < largo; j++){
       opcionesRadio[j] = xmlDoc.getElementsByTagName("question")[i].getElementsByTagName("option")[j].innerHTML;
     }
-    ponerDatosRadioHtml(opcionesRadio, i);
+    ponerDatosRadioHtml(opcionesRadio, i); /*INTRODUCIR DATOS*/
   }
 }
 function ponerDatosSelectHtml(optSelect, i){
@@ -85,13 +85,18 @@ function ponerDatosCheckHtml(optCheck, i){
   for(i = 0; i < optCheck.length; i++){
     var input = document.createElement("input");
     var label = document.createElement("label");
+    var span = document.createElement("span");
     label.innerHTML = optCheck[i];
-    label.setAttribute("for", forAttribute);
+    //label.setAttribute("for", forAttribute);
+    label.className = "container";
+    span.className = "checkmark";
     input.type = "checkbox";
-    input.name = "opcion" + (i+1);
-    input.id = forAttribute;
-    check.appendChild(input);
+    //input.name = "opcion" + (i+1);
+    //input.id = forAttribute;
+    input.value = i + 1;
     check.appendChild(label);
+    label.appendChild(input); 
+    label.appendChild(span);
     check.appendChild(document.createElement("br"));
   }
 }
@@ -106,12 +111,16 @@ function ponerDatosRadioHtml(optRadio, i){
   for(i = 0; i < optRadio.length; i++){
     var input = document.createElement("input");
     var label = document.createElement("label");
+    var span = document.createElement("span");
     label.innerHTML = optRadio[i];
+    label.className = "containerRadio";
+    span.className = "checkmarkRadio";
     input.type = "radio";
     input.name = nameRadio;
     input.value = i + 1;
-    radio.appendChild(input);
     radio.appendChild(label);
+    label.appendChild(input);
+    label.appendChild(span);
     radio.appendChild(document.createElement("br"));
   }
 }
