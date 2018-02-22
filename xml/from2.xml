@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<questions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="val.xsd">
+	<question>
+		<type>text</type>
+		<title>1. Css: Dale color verde a un div con id="miDiv".</title>
+		<answer>#miDiv{background-color: green;}</answer>
+	</question>
+	<question>
+		<type>text</type>
+		<title>2. Javascript: Almacena id="asd" en una variable llamada "prueba". (La variable no está declarada)</title>
+		<answer>var prueba = document.getElementById("asd");</answer>
+	</question>
+	<question>
+		<type>select</type>
+		<title>3. Si te digo absolute, ¿En qué piensas?</title>
+		<option>No lo sé</option>
+		<option>No me consta</option> 
+		<option>Relative</option>
+		<option>Fixed</option>
+		<answer>2</answer>
+	</question>
+	<question>
+		<type>select</type>
+		<title>4. ¿Qué etiquetas usarías para hacer una lista?</title>
+		<option>li, ul</option>
+		<option>div , ul</option> 
+		<option>ul, li</option>
+		<answer>2</answer>
+	</question>
+	<question>
+		<type>multiple</type>
+		<title>5. Para dimensionar un div, ¿Qué utilizarías?</title>
+		<option>Height</option>
+		<option>Width</option> 
+		<option>Margin</option> 
+		<option>Top</option>
+		<answer>0</answer>
+		<answer>1</answer>
+	</question>
+	<question>
+		<type>multiple</type>
+		<title>6. Marca los tipos de archivos utilizados para crear una web.</title>
+		<option>.pdf</option>
+		<option>.js</option> 
+		<option>.css</option> 
+		<option>.html</option>
+		<answer>1</answer>
+		<answer>2</answer>
+		<answer>3</answer>
+	</question>
+	<question>
+		<type>checkbox</type>
+		<title>7. Marca las propiedades de css</title>
+		<option>color</option>
+		<option>fixed</option> 
+		<option>display</option> 
+		<option>none</option>
+		<answer>0</answer>
+		<answer>2</answer>
+	</question>
+	<question>
+		<type>checkbox</type>
+		<title>8. ¿Dónde puedes dar estilo a un elemento html?</title>
+		<option>En el .css</option>
+		<option>En el .html</option> 
+		<option>En el .class</option> 
+		<option>En el .js</option>
+		<answer>0</answer>
+		<answer>1</answer>
+    <answer>3</answer>
+	</question>
+	<question>
+		<type>radio</type>
+		<title>9. ¿Convendría tener una paleta de colores al empezar el estilo de un proyecto?</title>
+		<option>No</option>
+		<option>Sí</option> 
+		<option>No lo sé</option> 
+		<option>Ninguna de las anteriores es correcta</option>
+		<answer>1</answer>
+	</question>
+	<question>
+		<type>radio</type>
+		<title>10. ¿Cómo empezarías un .html?</title>
+		<option>body</option>
+		<option>tittle</option> 
+		<option>!doctype</option>
+		<option>html</option>
+		<answer>3</answer>
+	</question>
+</questions>
