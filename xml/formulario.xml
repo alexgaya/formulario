@@ -67,7 +67,7 @@
 		<option>En el .js</option>
 		<answer>0</answer>
 		<answer>1</answer>
-    <answer>3</answer>
+    		<answer>3</answer>
 	</question>
 	<question>
 		<type>radio</type>
@@ -76,7 +76,7 @@
 		<option>Sí</option> 
 		<option>No lo sé</option> 
 		<option>Ninguna de las anteriores es correcta</option>
-		<answer>1</answer>
+		<answer>2</answer>
 	</question>
 	<question>
 		<type>radio</type>
