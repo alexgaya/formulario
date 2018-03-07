@@ -15,9 +15,4 @@
 * Json validado
 
 ## Versión mimificada:
-
-
-
-
-
-
+https://github.com/alexgaya/formulario/tree/mimi
