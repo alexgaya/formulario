@@ -44,10 +44,10 @@ window.onload = function(){
 		transicionPlus();
 		contenido = 2;
 	}
-	elem[3].onclick = function(){
+	/*elem[3].onclick = function(){
 		transicionPlus();
 		contenido = 3;
-	}
+	}*/
 /*FINAL WINDOW ONLOAD*/
 }
 
