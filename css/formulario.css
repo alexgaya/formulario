@@ -67,7 +67,7 @@ input[type="text"]{
 }
 
 select{
-	font-size: 1.7em;
+	font-size: 1.6em;
 }
 /*MODIFICAR CHECKBOX*/
 /*
@@ -245,5 +245,5 @@ span:after {
 /*MÓVIL*/
 @media screen and (max-width: 960px) {
 	h3{font-size: 1.4em;}
-	select[multiple]{font-size: 1.3em;}
+	select[multiple]{font-size: 1.2em;}
 }
