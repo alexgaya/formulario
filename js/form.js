@@ -1,5 +1,5 @@
 // fichoro xml que está en el servidor rawgit
-var url="https://rawgit.com/alexgaya/formulario/master/xml/formulario.xml";
+var url="https://rawgit.com/alexgaya/formulario/master/xml/form2.xml";
 var xhttp = new XMLHttpRequest();
 var formulario = null;
 var puntuacion = 0;
