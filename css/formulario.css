@@ -28,9 +28,6 @@ select, input[type=text]{
 	background-color: #1F4A7E;
 	color: white;
 }
-hr{
-	margin-top: 3%;
-}
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: white;
 }
