@@ -14,5 +14,15 @@
 * Xml, xsd y dtd validado
 * Json validado
 
+## Corrección:
+* Text
+* Select
+* Select múltiple
+* Checkbox
+* Radio
+
+## Open Graph Protocol
+En el enlace proporcionado anteriormente están todas las etiquetas meta necesarias, se ha comprobado su funcionamiento mediante la herramienta online https://www.heymeta.com
+
 ## Versión mimificada:
 https://github.com/alexgaya/formulario/tree/mimi
