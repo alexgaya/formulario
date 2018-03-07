@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE questions SYSTEM "questions.dtd">
+<!DOCTYPE questions SYSTEM "validate.dtd">
 <questions>
 	<question>
 		<type>text</type>
